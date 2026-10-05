@@ -1,0 +1,76 @@
+name: Deploy Quartz to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout knowledge base
+        uses: actions/checkout@v4
+        with:
+          path: kb
+
+      - name: Checkout Quartz
+        uses: actions/checkout@v4
+        with:
+          repository: jackyzha0/quartz
+          ref: v4
+          path: quartz
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Quartz
+        working-directory: quartz
+        run: npm ci
+
+      - name: Prepare content
+        shell: bash
+        run: |
+          rm -rf quartz/content
+          mkdir -p quartz/content
+          find kb -maxdepth 1 -type f -name '*.md' ! -name 'README.md' -exec cp '{}' quartz/content/ \;
+          cp -r kb/images quartz/content/images
+          if [ -d kb/sources ]; then
+            mkdir -p quartz/content/sources
+            cp -r kb/sources/. quartz/content/sources/
+          fi
+          cp kb/.quartz/quartz.config.ts quartz/quartz.config.ts
+
+      - name: Build Quartz
+        working-directory: quartz
+        run: npx quartz build
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: quartz/public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
