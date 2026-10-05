@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520">
+<rect width="760" height="520" fill="white"/>
+<text x="380" y="34" text-anchor="middle" font-family="sans-serif" font-size="22">ДЗ-1, вариант 13, №2: проекция D на Oxy</text>
+<line x1="80" y1="430" x2="690" y2="430" stroke="#444" stroke-width="2"/>
+<line x1="380" y1="470" x2="380" y2="70" stroke="#444" stroke-width="2"/>
+<text x="700" y="436" font-family="sans-serif" font-size="17">x</text>
+<text x="390" y="82" font-family="sans-serif" font-size="17">y</text>
+<path d="M170 150 L590 150 C520 260 450 360 380 430 C310 360 240 260 170 150 Z" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+<line x1="170" y1="150" x2="590" y2="150" stroke="#7c3aed" stroke-width="3"/>
+<path d="M170 150 C240 260 310 360 380 430 C450 360 520 260 590 150" fill="none" stroke="#dc2626" stroke-width="3"/>
+<text x="600" y="155" font-family="serif" font-size="18">y=1</text>
+<text x="500" y="300" font-family="serif" font-size="18">y=x²</text>
+<text x="362" y="122" font-family="sans-serif" font-size="20" fill="#1d4ed8">D</text>
+<text x="160" y="452" font-family="serif" font-size="16">-1</text>
+<text x="585" y="452" font-family="serif" font-size="16">1</text>
+</svg>
