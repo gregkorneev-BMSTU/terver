@@ -1,4 +1,5 @@
 name: Deploy Quartz to GitHub Pages
+# Pages enabled
 
 on:
   push:
