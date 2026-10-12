@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 370" role="img" aria-label="Пример беспорядка на пяти элементах: 1 переходит в 2, 2 в 3, 3 в 4, 4 в 5, 5 в 1">
+<rect x="1" y="1" width="918" height="368" rx="16" fill="#fcfdff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="460" y="38" text-anchor="middle" font-family="sans-serif" font-size="23" fill="#0f172a" font-weight="bold">Пример правильной перестановки без совпадений (беспорядок)</text>
+<text x="170" y="78" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#1e40af">Письма</text>
+<text x="750" y="78" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#0f766e">Конверты</text>
+<g font-family="sans-serif" font-size="21" font-weight="bold" text-anchor="middle">
+<g fill="#dbeafe" stroke="#2563eb" stroke-width="2"><rect x="104" y="93" width="128" height="42" rx="8"/><rect x="104" y="149" width="128" height="42" rx="8"/><rect x="104" y="205" width="128" height="42" rx="8"/><rect x="104" y="261" width="128" height="42" rx="8"/><rect x="104" y="317" width="128" height="42" rx="8"/></g>
+<g fill="#dcfce7" stroke="#0f766e" stroke-width="2"><rect x="686" y="93" width="128" height="42" rx="8"/><rect x="686" y="149" width="128" height="42" rx="8"/><rect x="686" y="205" width="128" height="42" rx="8"/><rect x="686" y="261" width="128" height="42" rx="8"/><rect x="686" y="317" width="128" height="42" rx="8"/></g>
+<g fill="#1e40af"><text x="168" y="121">1</text><text x="168" y="177">2</text><text x="168" y="233">3</text><text x="168" y="289">4</text><text x="168" y="345">5</text></g>
+<g fill="#0f766e"><text x="750" y="121">1</text><text x="750" y="177">2</text><text x="750" y="233">3</text><text x="750" y="289">4</text><text x="750" y="345">5</text></g>
+</g>
+<g stroke="#475569" stroke-width="3.5" stroke-linecap="round" fill="none">
+<path d="M232 114 L686 170"/><path d="M232 170 L686 226"/><path d="M232 226 L686 282"/><path d="M232 282 L686 338"/><path d="M232 338 Q454 380 686 114"/>
+</g>
+<g fill="#475569"><path d="M676 161 L690 170 L675 175 Z"/><path d="M676 217 L690 226 L675 231 Z"/><path d="M676 273 L690 282 L675 287 Z"/><path d="M676 329 L690 338 L675 343 Z"/><path d="M676 114 L690 114 L680 128 Z"/></g>
+<text x="452" y="86" font-family="sans-serif" font-size="15" fill="#64748b" text-anchor="middle">Соответствие 1 → 2 → 3 → 4 → 5 → 1</text>
+</svg>
