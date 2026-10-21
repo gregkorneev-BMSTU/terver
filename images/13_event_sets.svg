@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1030 320" role="img" aria-label="Четыре диаграммы Эйлера-Венна для объединения, пересечения, разности и дополнения событий">
+<rect x="0" y="0" width="1030" height="320" fill="#f8fafc"/>
+<g font-family="Arial,sans-serif" font-size="17" text-anchor="middle" fill="#334155">
+<text x="125" y="38" font-size="19" font-weight="bold">A ∪ B</text><text x="380" y="38" font-size="19" font-weight="bold">A ∩ B</text><text x="640" y="38" font-size="19" font-weight="bold">A \ B</text><text x="890" y="38" font-size="19" font-weight="bold">Ā = Ω \ A</text>
+<rect x="20" y="53" width="215" height="203" rx="12" fill="white" stroke="#cbd5e1"/><rect x="275" y="53" width="215" height="203" rx="12" fill="white" stroke="#cbd5e1"/><rect x="535" y="53" width="215" height="203" rx="12" fill="white" stroke="#cbd5e1"/><rect x="785" y="53" width="215" height="203" rx="12" fill="#bfdbfe" stroke="#cbd5e1"/>
+<g transform="translate(125,150)"><circle cx="-37" cy="0" r="62" fill="#60a5fa" opacity="0.75"/><circle cx="37" cy="0" r="62" fill="#60a5fa" opacity="0.75"/><circle cx="-37" cy="0" r="62" fill="none" stroke="#1d4ed8" stroke-width="2"/><circle cx="37" cy="0" r="62" fill="none" stroke="#1d4ed8" stroke-width="2"/><text x="-72" y="-7">A</text><text x="72" y="-7">B</text></g>
+<defs><clipPath id="clipA"><circle cx="343" cy="150" r="62"/></clipPath><mask id="minusB"><rect width="1030" height="320" fill="white"/><circle cx="677" cy="150" r="62" fill="black"/></mask></defs>
+<circle cx="343" cy="150" r="62" fill="#e2e8f0" stroke="#1d4ed8" stroke-width="2"/><circle cx="417" cy="150" r="62" fill="#e2e8f0" stroke="#1d4ed8" stroke-width="2"/><circle cx="417" cy="150" r="62" fill="#2563eb" clip-path="url(#clipA)"/><text x="329" y="142">A</text><text x="443" y="142">B</text>
+<circle cx="603" cy="150" r="62" fill="#2563eb" mask="url(#minusB)"/><circle cx="603" cy="150" r="62" fill="none" stroke="#1d4ed8" stroke-width="2"/><circle cx="677" cy="150" r="62" fill="none" stroke="#1d4ed8" stroke-width="2"/><text x="577" y="140" fill="white">A</text><text x="706" y="140">B</text>
+<circle cx="890" cy="150" r="65" fill="white" stroke="#1d4ed8" stroke-width="2"/><text x="890" y="148">A</text><text x="980" y="75" font-size="12">Ω</text>
+<text x="125" y="291" font-size="15">хотя бы одно</text><text x="380" y="291" font-size="15">оба события</text><text x="640" y="291" font-size="15">A без B</text><text x="890" y="291" font-size="15">вне события A</text>
+</g></svg>
